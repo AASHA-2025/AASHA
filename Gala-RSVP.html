@@ -43,23 +43,25 @@
       opacity: 0.9;
     }
 
-    .home-button {
-      background-color: transparent;
-      color: #FFD700; /* Gold text */
-      padding: 8px 14px;
-      border: 2px solid #FFD700;
-      border-radius: 4px;
-      text-decoration: none;
-      font-weight: bold;
-      font-size: 1rem;
-      transition: all 0.2s ease;
-    }
-
-    .home-button:hover {
-      background-color: #FFD700;
-      color: #8B0000;
-      box-shadow: 0 0 10px #FFD700;
-    }
+ .home-button {
+    background-color: #FFD700; /* Gold background */
+    color: #8B0000; /* Deep red text */
+    padding: 10px 20px;
+    border-radius: 5px;
+    text-decoration: none;
+    font-weight: bold;
+    font-size: 1.2em;
+    box-shadow: 2px 2px 5px rgba(0, 0, 0, 0.3);
+    position: absolute;
+    top: 20px;
+    left: 20px;
+    transition: background-color 0.3s, transform 0.2s;
+}
+.home-button:hover {
+    background-color: #e6c200; /* Slightly darker gold */
+    transform: scale(1.05);
+}
+</style>
 
     main {
       max-width: 900px;
@@ -96,6 +98,7 @@
       color: #ffd54f;
       margin-top: 1rem;
     }
+    
   </style>
 </head>
 <body>
@@ -107,7 +110,7 @@
         <div class="sub-title">All American Sindhi Hindu Association</div>
       </div>
     </div>
-    <a href="https://aasha-2025.github.io/AASHA/index.html"class="home-button">Home</a>
+    <a href="https://AASHA-2025.github.io/AASHA/" class="home-button">Home</a>
   </header>
 
   <main>
