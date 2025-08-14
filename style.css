@@ -1,0 +1,83 @@
+:root {
+  --primary-color: #b71c1c;
+  --secondary-color: #ff9800;
+  --text-color: #fff;
+  --bg-gradient: linear-gradient(135deg, var(--primary-color), var(--secondary-color));
+}
+body {
+  font-family: 'Poppins', sans-serif;
+  background: var(--bg-gradient);
+  color: var(--text-color);
+  margin: 0; 
+  padding: 0;
+  line-height: 1.6;
+}
+header {
+  background-color: rgba(0,0,0,0.6);
+  padding: 1.5rem 2rem;
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  gap: 5px;
+}
+.header-logo-container {
+  display: flex;
+  align-items: center;
+  gap: 15px;
+}
+header img {
+  height: 60px;
+}
+header h1 {
+  margin: 0;
+  font-size: 2.5rem;
+  font-weight: 700;
+  letter-spacing: 1px;
+}
+.header-subtitle {
+  font-size: 1.1rem;
+  font-weight: 400;
+  color: #ffd54f;
+}
+main {
+  max-width: 900px;
+  margin: 3rem auto;
+  padding: 2rem;
+  background: rgba(0,0,0,0.5);
+  border-radius: 12px;
+  box-shadow: 0 8px 30px rgba(0,0,0,0.6);
+}
+main h2 {
+  font-size: 2.2rem;
+  font-weight: 600;
+  margin-bottom: 1.5rem;
+  border-bottom: 2px solid #ffcc80;
+  padding-bottom: 0.5rem;
+}
+main p {
+  font-size: 1.1rem;
+  margin-bottom: 1.5rem;
+}
+.whatsapp-link {
+  display: inline-block; 
+  background-color: #25D366; 
+  color: white; 
+  padding: 14px 24px; 
+  border-radius: 8px; 
+  font-size: 1rem; 
+  font-weight: 600; 
+  text-decoration: none; 
+  box-shadow: 0 4px 10px rgba(0,0,0,0.2);
+  transition: background-color 0.3s ease;
+}
+.whatsapp-link:hover {
+  background-color: #128C7E;
+}
+footer {
+  text-align: center;
+  padding: 1.5rem;
+  font-size: 0.9rem;
+  background-color: rgba(0,0,0,0.6);
+  color: #ffd54f;
+  margin-top: 3rem;
+}
