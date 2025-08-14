@@ -86,17 +86,49 @@
       color: #ffd54f;
       margin-top: 1rem;
     }
+    header {
+  background-color: rgba(0,0,0,0.6);
+  padding: 1rem 2rem;
+  display: flex;
+  align-items: center;
+  justify-content: space-between; /* Space between button and logo/text */
+}
+
+.home-button {
+  background-color: transparent;
+  color: #FFD700; /* Gold text */
+  padding: 8px 14px;
+  border: 2px solid #FFD700;
+  border-radius: 4px;
+  text-decoration: none;
+  font-weight: bold;
+  font-size: 1rem;
+  transition: all 0.2s ease;
+}
+
+.home-button:hover {
+  background-color: #FFD700;
+  color: #8B0000;
+  box-shadow: 0 0 10px #FFD700;
+}
+
+header img {
+  height: 60px;
+  width: 60px;
+}
   </style>
 </head>
 <body>
   <header>
-    <a href="https://aasha-2025.github.io" class="home-button">Home</a>
+  <a href="https://aasha-2025.github.io" class="home-button">Home</a>
+  <div style="display: flex; align-items: center; gap: 15px;">
     <img src="image2.PNG" alt="AASHA Logo">
     <div>
-      <h1>AASHA</h1>
-      <div class="sub-title">All American Sindhi Hindu Association</div>
+      <h1 style="margin: 0;">AASHA</h1>
+      <div>All American Sindhi Hindu Association</div>
     </div>
-  </header>
+  </div>
+</header>
 
   <main>
     <h2>AASHA Gala Night 2026</h2>
