@@ -1,149 +1,94 @@
 :root {
-  --primary-color: #96281b; /* Dark Maroon */
-  --secondary-color: #ff9800; /* Vibrant Orange */
-  --accent-color: #a35f3d; /* Earthy Brown */
-  --background-color: #f5f5f5; /* Light grey for sections */
+  --primary-color: #96281b;
+  --secondary-color: #ff9800;
+  --accent-color: #a35f3d;
   --text-dark: #333;
   --text-light: #fff;
 }
-
+html, body {
+  height: 100%;
+  margin: 0;
+  padding: 0;
+}
 body {
   font-family: 'Poppins', sans-serif;
   color: var(--text-dark);
-  margin: 0;
-  padding: 0;
-  line-height: 1.6;
-  background: var(--background-color);
-}
-
-h1, h2, h3 {
-  font-family: 'Playfair Display', serif;
-  color: var(--primary-color);
-  font-weight: 700;
-}
-
-/* Header and Logo */
-header {
-  background-color: var(--accent-color);
-  padding: 1rem 2rem;
-  display: flex;
-  align-items: center;
-  justify-content: flex-start;
-  box-shadow: 0 2px 10px rgba(0,0,0,0.1);
-}
-
-.logo-container {
-  display: flex;
-  align-items: center;
-  gap: 15px;
-}
-
-header img.logo {
-  height: 60px;
-}
-
-.logo-text h1 {
-  font-size: 2rem;
-  margin: 0;
-  color: var(--text-light);
-}
-
-.logo-text p {
-  font-size: 0.9rem;
-  margin: 0;
-  color: #f5f5f5;
-  letter-spacing: 1px;
-}
-
-/* Hero Section */
-.hero {
-  background: linear-gradient(rgba(0, 0, 0, 0.6), rgba(0, 0, 0, 0.6)), url('https://via.placeholder.com/1200x600/96281b/ffffff?text=Sindhi+Culture+Background') center/cover no-repeat;
-  color: var(--text-light);
-  text-align: center;
-  padding: 8rem 2rem;
-}
-
-.hero-content h2 {
-  font-size: 3.5rem;
-  color: var(--secondary-color);
-  margin-bottom: 1rem;
-}
-
-.hero-content p {
-  font-size: 1.5rem;
-  max-width: 700px;
-  margin: 0 auto 2rem;
-}
-
-/* About Section */
-.about {
+  line-height: 1.4;
+  background: linear-gradient(135deg, var(--primary-color), var(--secondary-color));
   display: flex;
   flex-direction: column;
+  justify-content: space-between;
+}
+h1, h2, h3 {
+  font-family: 'Playfair Display', serif;
+  font-weight: 700;
+}
+header {
+  background-color: rgba(0,0,0,0.4);
+  padding: 1rem;
+  color: var(--text-light);
+  display: flex;
   align-items: center;
-  gap: 2rem;
-  max-width: 1100px;
-  margin: 4rem auto;
-  padding: 0 2rem;
-}
-
-.about-content {
-  flex: 1;
+  justify-content: space-between;
   text-align: center;
 }
-
-.about-content h3 {
-  font-size: 2.5rem;
+header img.logo {
+  height: 40px;
+  margin-right: auto;
 }
-
-.about-image {
+.header-text {
+  flex-grow: 1;
+}
+.header-text h1 {
+  font-size: 1.5rem;
+  margin: 0;
+  color: var(--text-light);
+}
+.header-text p {
+  font-size: 0.8rem;
+  margin: 0;
+  color: #f5f5f5;
+}
+main {
   flex: 1;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
   text-align: center;
+  padding: 1rem;
+  background: rgba(0,0,0,0.2);
 }
-
-.about-image img {
-  border-radius: 8px;
-  box-shadow: 0 4px 20px rgba(0,0,0,0.1);
-  max-width: 100%;
-  height: auto;
+main h2 {
+  font-size: 2rem;
+  color: var(--secondary-color);
+  margin-bottom: 0.5rem;
 }
-
-/* Call to Action - WhatsApp Button */
+main p {
+  font-size: 1rem;
+  max-width: 600px;
+  margin: 0 auto 1rem;
+  color: var(--text-light);
+}
 .whatsapp-link {
   display: inline-block; 
   background-color: #25D366; 
   color: white; 
-  padding: 16px 32px; 
+  padding: 12px 24px; 
   border-radius: 50px; 
-  font-size: 1.1rem; 
+  font-size: 1rem; 
   font-weight: 600; 
   text-decoration: none; 
-  box-shadow: 0 4px 15px rgba(0,0,0,0.2);
-  transition: background-color 0.3s ease, transform 0.2s ease;
+  box-shadow: 0 4px 10px rgba(0,0,0,0.2);
+  transition: background-color 0.3s ease;
 }
-
 .whatsapp-link:hover {
   background-color: #128C7E;
-  transform: translateY(-2px);
 }
-
-/* Footer */
 footer {
   text-align: center;
-  padding: 2rem;
-  font-size: 0.9rem;
-  background-color: var(--accent-color);
-  color: var(--text-light);
-  margin-top: 3rem;
-}
-
-/* Responsive adjustments */
-@media (min-width: 768px) {
-  .about {
-    flex-direction: row;
-    text-align: left;
-  }
-
-  .about-content {
-    order: 1;
-  }
+  padding: 1rem;
+  font-size: 0.8rem;
+  background-color: rgba(0,0,0,0.4);
+  color: #ffd54f;
 }
