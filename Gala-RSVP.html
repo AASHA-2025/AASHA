@@ -12,49 +12,57 @@
       margin: 0;
       padding: 0;
     }
+    
+    /* Updated header styles to place elements on opposite ends */
     header {
       background-color: rgba(0,0,0,0.6);
-      padding: 0.5rem 1rem;
+      padding: 1rem 2rem;
       display: flex;
       align-items: center;
-      justify-content: center;
-      position: relative;
+      justify-content: space-between; /* This is the key change */
+      gap: 20px; /* Gap between the logo and button */
     }
+
+    .logo-title {
+      display: flex;
+      align-items: center;
+      gap: 15px;
+    }
+
     header img {
-      height: 50px;
-      width: 50px;
-      margin-right: 10px;
+      height: 60px;
+      width: 60px;
     }
+
     header h1 {
       margin: 0;
-      font-size: 1.8rem;
-      letter-spacing: 1px;
-      line-height: 1.2;
+      font-size: 2rem;
     }
+
     .sub-title {
       font-size: 0.9rem;
       opacity: 0.9;
     }
+
+    /* Updated home-button styles */
     .home-button {
-      position: absolute;
-      left: 20px;
-      top: 50%;
-      transform: translateY(-50%);
       background-color: transparent;
-      color: #FFD700;
-      padding: 6px 12px;
+      color: #FFD700; /* Gold text */
+      padding: 8px 14px;
       border: 2px solid #FFD700;
       border-radius: 4px;
       text-decoration: none;
       font-weight: bold;
-      font-size: 0.9rem;
+      font-size: 1rem;
       transition: all 0.2s ease;
     }
+
     .home-button:hover {
-      background-color: #FFD700;
-      color: #8B0000;
-      box-shadow: 0 0 8px #FFD700;
+      background-color: #FFD700; /* Gold background */
+      color: #8B0000; /* Deep red text */
+      box-shadow: 0 0 10px #FFD700;
     }
+
     main {
       max-width: 900px;
       margin: 1rem auto;
@@ -64,6 +72,7 @@
       box-shadow: 0 0 12px rgba(0,0,0,0.5);
       text-align: center;
     }
+    
     main h2 {
       font-size: 1.5rem;
       margin-bottom: 0.3rem;
@@ -86,67 +95,22 @@
       color: #ffd54f;
       margin-top: 1rem;
     }
-    header {
-  background-color: rgba(0,0,0,0.6);
-  padding: 1rem 2rem;
-  display: flex;
-  align-items: center;
-  justify-content: flex-start;
-  gap: 20px;
-}
-
-.logo-title {
-  display: flex;
-  align-items: center;
-  gap: 15px;
-}
-
-header img {
-  height: 60px;
-  width: 60px;
-}
-
-header h1 {
-  margin: 0;
-  font-size: 2rem;
-}
-
-.home-button {
-  background-color: transparent;
-  color: #FFD700; /* Gold text */
-  padding: 8px 14px;
-  border: 2px solid #FFD700;
-  border-radius: 4px;
-  text-decoration: none;
-  font-weight: bold;
-  font-size: 1rem;
-  transition: all 0.2s ease;
-}
-
-.home-button:hover {
-  background-color: #FFD700; /* Gold background */
-  color: #8B0000; /* Deep red text */
-  box-shadow: 0 0 10px #FFD700;
-}
-    
   </style>
 </head>
 <body>
   <header>
-  <div class="logo-title">
-    <img src="image2.PNG" alt="AASHA Logo">
-    <div>
-      <h1>AASHA</h1>
-      <div>All American Sindhi Hindu Association</div>
+    <div class="logo-title">
+      <img src="image2.PNG" alt="AASHA Logo">
+      <div>
+        <h1>AASHA</h1>
+        <div class="sub-title">All American Sindhi Hindu Association</div>
+      </div>
     </div>
- 
-  </div>
-</header>
+    
+    <a href="https://aasha-2025.github.io" class="home-button">Home</a>
+  </header>
 
   <main>
-       <div>
-      <a href="https://aasha-2025.github.io" class="home-button">Home</a>
-    </div>
     <h2>AASHA Gala Night 2026</h2>
     <p>RSVP now to secure your spot for this unforgettable evening.</p>
 
