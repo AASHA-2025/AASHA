@@ -91,7 +91,24 @@
   padding: 1rem 2rem;
   display: flex;
   align-items: center;
-  justify-content: space-between; /* Space between button and logo/text */
+  justify-content: flex-start;
+  gap: 20px;
+}
+
+.logo-title {
+  display: flex;
+  align-items: center;
+  gap: 15px;
+}
+
+header img {
+  height: 60px;
+  width: 60px;
+}
+
+header h1 {
+  margin: 0;
+  font-size: 2rem;
 }
 
 .home-button {
@@ -107,24 +124,20 @@
 }
 
 .home-button:hover {
-  background-color: #FFD700;
-  color: #8B0000;
+  background-color: #FFD700; /* Gold background */
+  color: #8B0000; /* Deep red text */
   box-shadow: 0 0 10px #FFD700;
 }
-
-header img {
-  height: 60px;
-  width: 60px;
-}
+    
   </style>
 </head>
 <body>
   <header>
   <a href="https://aasha-2025.github.io" class="home-button">Home</a>
-  <div style="display: flex; align-items: center; gap: 15px;">
+  <div class="logo-title">
     <img src="image2.PNG" alt="AASHA Logo">
     <div>
-      <h1 style="margin: 0;">AASHA</h1>
+      <h1>AASHA</h1>
       <div>All American Sindhi Hindu Association</div>
     </div>
   </div>
