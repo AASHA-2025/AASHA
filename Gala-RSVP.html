@@ -13,13 +13,14 @@
       padding: 0;
     }
 
-    /* Header with logo on left and Home button on right */
+    /* Updated header styles to position the logo and button on opposite ends */
     header {
       background-color: rgba(0,0,0,0.6);
       padding: 1rem 2rem;
-      display: flex;
-      align-items: center;
-      justify-content: space-between;
+      display: flex; /* Makes the header a flex container */
+      align-items: center; /* Vertically centers the items */
+      justify-content: space-between; /* Pushes the logo and button to opposite ends */
+      flex-wrap: wrap; /* Allows items to wrap to a new line on smaller screens */
     }
 
     .logo-title {
@@ -43,6 +44,7 @@
       opacity: 0.9;
     }
 
+    /* Updated home-button styles */
     .home-button {
       background-color: transparent;
       color: #FFD700; /* Gold text */
@@ -107,7 +109,7 @@
         <div class="sub-title">All American Sindhi Hindu Association</div>
       </div>
     </div>
-    <a href="https://aasha-2025.github.io/AASHA" class="home-button">Home</a>
+    <a href="https://aasha-2025.github.io" class="home-button">Home</a>
   </header>
 
   <main>
