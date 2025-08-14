@@ -9,100 +9,105 @@
       font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
       background: linear-gradient(135deg, #b71c1c, #ff9800);
       color: white;
-      margin: 0; padding: 0;
+      margin: 0;
+      padding: 0;
     }
     header {
       background-color: rgba(0,0,0,0.6);
-      padding: 1rem 2rem;
-      text-align: center;
+      padding: 0.5rem 1rem;
       display: flex;
       align-items: center;
       justify-content: center;
-      gap: 15px;
+      position: relative;
     }
     header img {
-      height: 60px;
-      width: 60px;
+      height: 50px;
+      width: 50px;
+      margin-right: 10px;
     }
     header h1 {
       margin: 0;
-      font-size: 2.5rem;
-      letter-spacing: 2px;
+      font-size: 1.8rem;
+      letter-spacing: 1px;
+      line-height: 1.2;
+    }
+    .sub-title {
+      font-size: 0.9rem;
+      opacity: 0.9;
     }
     .home-button {
-  position: absolute;
-  left: 20px;
-  top: 50%;
-  transform: translateY(-50%);
-  background-color: transparent;
-  color: #FFD700; /* Gold text */
-  padding: 8px 14px;
-  border: 2px solid #FFD700;
-  border-radius: 4px;
-  text-decoration: none;
-  font-weight: bold;
-  font-size: 1rem;
-  transition: all 0.2s ease;
-}
-.home-button:hover {
-  background-color: #FFD700; /* Gold background */
-  color: #8B0000; /* Deep red text */
-  box-shadow: 0 0 10px #FFD700;
-}
+      position: absolute;
+      left: 20px;
+      top: 50%;
+      transform: translateY(-50%);
+      background-color: transparent;
+      color: #FFD700;
+      padding: 6px 12px;
+      border: 2px solid #FFD700;
+      border-radius: 4px;
+      text-decoration: none;
+      font-weight: bold;
+      font-size: 0.9rem;
+      transition: all 0.2s ease;
+    }
+    .home-button:hover {
+      background-color: #FFD700;
+      color: #8B0000;
+      box-shadow: 0 0 8px #FFD700;
+    }
     main {
       max-width: 900px;
-      margin: 3rem auto;
-      padding: 1rem 2rem;
+      margin: 1rem auto;
+      padding: 0.5rem 1rem;
       background: rgba(0,0,0,0.4);
-      border-radius: 10px;
-      box-shadow: 0 0 15px rgba(0,0,0,0.5);
+      border-radius: 8px;
+      box-shadow: 0 0 12px rgba(0,0,0,0.5);
       text-align: center;
     }
     main h2 {
-      font-size: 2rem;
-      margin-bottom: 1rem;
-      border-bottom: 2px solid #fff;
-      padding-bottom: 0.5rem;
+      font-size: 1.5rem;
+      margin-bottom: 0.3rem;
     }
     main p {
-      font-size: 1.2rem;
-      line-height: 1.6;
+      font-size: 1rem;
+      margin-bottom: 0.8rem;
     }
     iframe {
-      border: 5px solid #FFD700;
-      border-radius: 10px;
-      max-width: 100%;
+      border: 4px solid #FFD700;
+      border-radius: 8px;
+      width: 100%;
+      height: 900px;
     }
     footer {
       text-align: center;
-      padding: 1rem;
-      font-size: 0.9rem;
+      padding: 0.8rem;
+      font-size: 0.8rem;
       background-color: rgba(0,0,0,0.6);
       color: #ffd54f;
-      margin-top: 3rem;
+      margin-top: 1rem;
     }
   </style>
 </head>
 <body>
   <header>
+    <a href="https://aasha-2025.github.io" class="home-button">Home</a>
+    <img src="image2.PNG" alt="AASHA Logo">
     <div>
-      <h1><img src="image2.PNG" alt="AASHA Logo">AASHA</h1>
-      <div style="text-align: center;">All American Sindhi Hindu Association</div>
+      <h1>AASHA</h1>
+      <div class="sub-title">All American Sindhi Hindu Association</div>
     </div>
   </header>
-      <a href="https://aasha-2025.github.io" class="home-button">Home</a>
+
   <main>
-    <<div class="container">
-    <h1>AASHA Gala Night 2026</h1>
-    <p>RSVP now and secure your spot for this unforgettable evening.</p>
-    
+    <h2>AASHA Gala Night 2026</h2>
+    <p>RSVP now to secure your spot for this unforgettable evening.</p>
+
     <iframe src="https://docs.google.com/forms/d/e/1FAIpQLScg7IWOIQ14C9OO_eipPUOqyEfY0JggjwzVidyj7ZjLWL9GyA/viewform?embedded=true" 
-        width="640" height="1200" frameborder="0" marginheight="0" marginwidth="0">Loading…</iframe>
-</div>
+        frameborder="0" marginheight="0" marginwidth="0">Loading…</iframe>
   </main>
+
   <footer>
     &copy; 2025 AASHA - All Rights Reserved
   </footer>
 </body>
 </html>
-
