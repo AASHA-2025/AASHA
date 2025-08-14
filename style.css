@@ -1,83 +1,149 @@
 :root {
-  --primary-color: #b71c1c;
-  --secondary-color: #ff9800;
-  --text-color: #fff;
-  --bg-gradient: linear-gradient(135deg, var(--primary-color), var(--secondary-color));
+  --primary-color: #96281b; /* Dark Maroon */
+  --secondary-color: #ff9800; /* Vibrant Orange */
+  --accent-color: #a35f3d; /* Earthy Brown */
+  --background-color: #f5f5f5; /* Light grey for sections */
+  --text-dark: #333;
+  --text-light: #fff;
 }
+
 body {
   font-family: 'Poppins', sans-serif;
-  background: var(--bg-gradient);
-  color: var(--text-color);
-  margin: 0; 
+  color: var(--text-dark);
+  margin: 0;
   padding: 0;
   line-height: 1.6;
+  background: var(--background-color);
 }
+
+h1, h2, h3 {
+  font-family: 'Playfair Display', serif;
+  color: var(--primary-color);
+  font-weight: 700;
+}
+
+/* Header and Logo */
 header {
-  background-color: rgba(0,0,0,0.6);
-  padding: 1.5rem 2rem;
+  background-color: var(--accent-color);
+  padding: 1rem 2rem;
   display: flex;
-  flex-direction: column;
-  align-items: flex-start;
-  gap: 5px;
+  align-items: center;
+  justify-content: flex-start;
+  box-shadow: 0 2px 10px rgba(0,0,0,0.1);
 }
-.header-logo-container {
+
+.logo-container {
   display: flex;
   align-items: center;
   gap: 15px;
 }
-header img {
+
+header img.logo {
   height: 60px;
 }
-header h1 {
+
+.logo-text h1 {
+  font-size: 2rem;
   margin: 0;
-  font-size: 2.5rem;
-  font-weight: 700;
+  color: var(--text-light);
+}
+
+.logo-text p {
+  font-size: 0.9rem;
+  margin: 0;
+  color: #f5f5f5;
   letter-spacing: 1px;
 }
-.header-subtitle {
-  font-size: 1.1rem;
-  font-weight: 400;
-  color: #ffd54f;
+
+/* Hero Section */
+.hero {
+  background: linear-gradient(rgba(0, 0, 0, 0.6), rgba(0, 0, 0, 0.6)), url('https://via.placeholder.com/1200x600/96281b/ffffff?text=Sindhi+Culture+Background') center/cover no-repeat;
+  color: var(--text-light);
+  text-align: center;
+  padding: 8rem 2rem;
 }
-main {
-  max-width: 900px;
-  margin: 3rem auto;
-  padding: 2rem;
-  background: rgba(0,0,0,0.5);
-  border-radius: 12px;
-  box-shadow: 0 8px 30px rgba(0,0,0,0.6);
+
+.hero-content h2 {
+  font-size: 3.5rem;
+  color: var(--secondary-color);
+  margin-bottom: 1rem;
 }
-main h2 {
-  font-size: 2.2rem;
-  font-weight: 600;
-  margin-bottom: 1.5rem;
-  border-bottom: 2px solid #ffcc80;
-  padding-bottom: 0.5rem;
+
+.hero-content p {
+  font-size: 1.5rem;
+  max-width: 700px;
+  margin: 0 auto 2rem;
 }
-main p {
-  font-size: 1.1rem;
-  margin-bottom: 1.5rem;
+
+/* About Section */
+.about {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 2rem;
+  max-width: 1100px;
+  margin: 4rem auto;
+  padding: 0 2rem;
 }
+
+.about-content {
+  flex: 1;
+  text-align: center;
+}
+
+.about-content h3 {
+  font-size: 2.5rem;
+}
+
+.about-image {
+  flex: 1;
+  text-align: center;
+}
+
+.about-image img {
+  border-radius: 8px;
+  box-shadow: 0 4px 20px rgba(0,0,0,0.1);
+  max-width: 100%;
+  height: auto;
+}
+
+/* Call to Action - WhatsApp Button */
 .whatsapp-link {
   display: inline-block; 
   background-color: #25D366; 
   color: white; 
-  padding: 14px 24px; 
-  border-radius: 8px; 
-  font-size: 1rem; 
+  padding: 16px 32px; 
+  border-radius: 50px; 
+  font-size: 1.1rem; 
   font-weight: 600; 
   text-decoration: none; 
-  box-shadow: 0 4px 10px rgba(0,0,0,0.2);
-  transition: background-color 0.3s ease;
+  box-shadow: 0 4px 15px rgba(0,0,0,0.2);
+  transition: background-color 0.3s ease, transform 0.2s ease;
 }
+
 .whatsapp-link:hover {
   background-color: #128C7E;
+  transform: translateY(-2px);
 }
+
+/* Footer */
 footer {
   text-align: center;
-  padding: 1.5rem;
+  padding: 2rem;
   font-size: 0.9rem;
-  background-color: rgba(0,0,0,0.6);
-  color: #ffd54f;
+  background-color: var(--accent-color);
+  color: var(--text-light);
   margin-top: 3rem;
+}
+
+/* Responsive adjustments */
+@media (min-width: 768px) {
+  .about {
+    flex-direction: row;
+    text-align: left;
+  }
+
+  .about-content {
+    order: 1;
+  }
 }
