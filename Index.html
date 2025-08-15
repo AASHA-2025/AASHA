@@ -60,19 +60,19 @@
   position: relative;
   display: inline-block;
     }
-    .logo-description {
-  position: absolute;
-  bottom: -40px;
-  left: 50%;
-  transform: translateX(-50%);
-  background: rgba(0,0,0,0.8);
-  color: white;
-  padding: 6px 10px;
-  border-radius: 4px;
-  font-size: 14px;
+  .logo-description {
+  position: fixed; /* position in relation to the screen */
+  top: 50%; /* center vertically */
+  left: 50%; /* center horizontally */
+  transform: translate(-50%, -50%); /* adjust perfectly center */
+  background: #5C4033; /* dark brown */
+  color: white; /* white text */
+  padding: 12px 18px;
+  border-radius: 6px;
+  font-size: 16px;
   display: none; /* hidden by default */
-}
-
+  z-index: 9999; /* on top of everything */
+  }
   </style>
   <script>
 function toggleDescription(el) {
