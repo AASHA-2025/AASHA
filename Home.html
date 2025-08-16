@@ -128,8 +128,22 @@ header img {
 }
 
 /* WhatsApp Button */
+.btn {
+  display: block;          /* Makes buttons stack vertically */
+  width: 200px;            /* Adjust width as needed */
+  padding: 12px 20px;
+  margin: 10px auto;       /* Centers and adds space between buttons */
+  text-align: center;
+  font-size: 16px;
+  font-weight: bold;
+  border-radius: 8px;
+  text-decoration: none;   /* Removes underline from links */
+  transition: all 0.3s ease;
+}
+
+/* WhatsApp Button */
 .btn.whatsapp {
-  background-color: #25D366; /* WhatsApp green */
+  background-color: #25D366;
   color: white;
   border: 2px solid #1da851;
 }
@@ -149,7 +163,7 @@ header img {
   transform: scale(1.05);
 }
 
-/* Center Buttons */
+/* Center the group */
 .button-group {
   text-align: center;
   margin-top: 20px;
@@ -187,12 +201,8 @@ header img {
       <span class="tagline">Connecting Hearts, Preserving Heritage</span>
     </p>
   <div class="button-group">
-  <a href="https://wa.me/1XXXXXXXXXX" class="btn whatsapp" target="_blank">
-    📲 Join WhatsApp
-  </a>
-  <a href="https://your-rsvp-link.com" class="btn rsvp" target="_blank">
-    ✨ RSVP Now
-  </a>
+  <a href="https://wa.me/YOUR_WHATSAPP_NUMBER" class="btn whatsapp">Join WhatsApp Group</a>
+  <a href="YOUR_RSVP_LINK" class="btn rsvp">RSVP Here</a>
 </div>
   </main>
   <footer>
