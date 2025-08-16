@@ -144,10 +144,19 @@
       margin-top: 3rem;
     }
 
-    @media (max-width: 600px) {
-      header img {
-        max-width: 150px;
-      }
+  header img {
+  max-width: 200px;   /* smaller default size */
+  height: auto;       /* keeps aspect ratio */
+  display: block;
+  margin: 0 auto;     /* centers it */
+}
+
+/* Responsive for smaller devices */
+@media (max-width: 600px) {
+  header img {
+    max-width: 300px; /* smaller logo for mobile */
+  }
+}
     }
   </style>
 </head>
