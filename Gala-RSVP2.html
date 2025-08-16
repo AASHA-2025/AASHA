@@ -5,81 +5,63 @@
   <meta name="viewport" content="width=device-width, initial-scale=1" />
   <title>AASHA Gala Night RSVP</title>
   <style>
-    /* Body and page theme */
+    /* Header with centered logo and title */
+    header {
+      background-color: #ffffff;
+      padding: 20px;
+      text-align: center;
+      border-bottom: 4px solid #B71C1C;
+    }
+
+    header img {
+      max-width: 200px;
+      height: auto;
+      display: block;
+      margin: 0 auto;
+    }
+
+    h1 {
+      color: #B71C1C;
+      font-size: 56px;
+      margin: 10px 0 0;
+    }
+
+    .subheading {
+      color: #333;
+      font-size: 20px;
+      font-weight: bold;
+      margin-top: 5px;
+    }
+
+    .tagline {
+      display: block;
+      font-family: 'Playfair Display', serif;
+      font-size: 22px;
+      font-style: italic;
+      font-weight: bold;
+      color: #D32F2F;
+      text-align: center;
+      margin-top: 10px;
+      padding-top: 10px;
+      border-top: 2px solid #F9A825;
+      letter-spacing: 1px;
+    }
+
+    /* Body theme */
     body {
       margin: 0;
       font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
       background: linear-gradient(135deg, #8B0000, #F9A825, #A0522D);
+      background-attachment: fixed;
       color: #fff;
     }
 
-    /* Header with logo, title, and home button */
-    header {
-      background-color: rgba(255,255,255,0.1);
-      padding: 1rem 2rem;
-      display: flex;
-      align-items: center;
-      justify-content: space-between;
-      flex-wrap: wrap;
-      border-bottom: 4px solid #B71C1C;
-    }
-
-    .logo-title {
-      display: flex;
-      align-items: center;
-      gap: 15px;
-    }
-
-    header img {
-      height: 60px;
-      width: 60px;
-    }
-
-    header h1 {
-      margin: 0;
-      font-size: 2rem;
-      color: #B71C1C;
-    }
-
-    .sub-title {
-      font-size: 0.9rem;
-      color: #FFD54F;
-      opacity: 0.9;
-    }
-
-    .tagline {
-      font-family: 'Playfair Display', serif;
-      font-size: 0.9rem;
-      font-style: italic;
-      font-weight: bold;
-      color: #FFD54F;
-    }
-
-    /* Home button */
-    .home-button {
-      background-color: transparent;
-      color: #FFD700;
-      padding: 8px 14px;
-      border: 2px solid #FFD700;
-      border-radius: 6px;
-      text-decoration: none;
-      font-weight: bold;
-      font-size: 1rem;
-      transition: all 0.2s ease;
-    }
-
-    .home-button:hover {
-      background-color: #FFD700;
-      color: #8B0000;
-      box-shadow: 0 0 10px #FFD700;
-    }
-
-    /* Main content area */
+    /* Main content container */
     main {
       max-width: 900px;
       margin: 2rem auto;
       padding: 2rem;
-      background: rgba(0,0,0,0.3);
+      background: rgba(255,255,255,0.1);
       border-radius: 12px;
       box-shadow: 0 0 20px rgba(0,0,0,0.5);
       text-align: center;
@@ -87,7 +69,9 @@
 
     main h2 {
       font-size: 2rem;
-      margin-bottom: 0.5rem;
+      margin-bottom: 1rem;
+      border-bottom: 2px solid #FFD54F;
+      padding-bottom: 0.5rem;
       color: #FFD54F;
     }
 
@@ -99,13 +83,14 @@
 
     main p {
       font-size: 1.2rem;
+      line-height: 1.7;
       margin-bottom: 2rem;
     }
 
-    /* Buttons inside main */
+    /* Buttons stacked vertically */
     .button-group {
       text-align: center;
-      margin-top: 20px;
+      margin-bottom: 2rem;
     }
 
     .btn {
@@ -143,7 +128,6 @@
       transform: scale(1.05);
     }
 
-    /* Embed RSVP iframe */
     iframe {
       border: 4px solid #FFD700;
       border-radius: 8px;
@@ -155,29 +139,29 @@
       text-align: center;
       padding: 1rem;
       font-size: 0.9rem;
-      background: rgba(0,0,0,0.4);
-      color: #FFD54F;
-      margin-top: 2rem;
+      background: linear-gradient(90deg, #002B5B, #D32F2F, #F9A825);
+      color: #fff;
+      margin-top: 3rem;
+    }
+
+    @media (max-width: 600px) {
+      header img {
+        max-width: 150px;
+      }
     }
   </style>
 </head>
 <body>
   <header>
-    <div class="logo-title">
-      <img src="image2.PNG" alt="AASHA Logo">
-      <div>
-        <h1>AASHA</h1>
-        <div class="sub-title">All American Sindhi Hindu Association</div>
-        <div class="tagline">Connecting Hearts, Preserving Heritage</div>
-      </div>
-    </div>
-    <a href="Index.html" class="home-button">Home</a>
+    <img src="IMG_9702.png" alt="AASHA Logo">
+    <h1>AASHA</h1>
+    <div class="subheading">All American Sindhi Hindu Association</div>
+    <span class="tagline">Connecting Hearts, Preserving Heritage</span>
   </header>
 
   <main>
-    <h2>All American Sindhi Hindu Cultural</h2>
-    <h1>Gala Night 2026</h1>
-    <p>RSVP now to secure your spot for this unforgettable evening.</p>
+    <h2>Gala Night 2026 RSVP</h2>
+    <p>Secure your spot for this unforgettable evening and join our vibrant Sindhi Hindu community!</p>
 
     <div class="button-group">
       <a href="https://chat.whatsapp.com/LMrn3Nz0iXgAJFRexZWTk8" target="_blank" class="btn whatsapp">
@@ -188,7 +172,6 @@
       </a>
     </div>
 
-    <!-- Optional embedded form -->
     <iframe src="https://docs.google.com/forms/d/e/1FAIpQLScg7IWOIQ14C9OO_eipPUOqyEfY0JggjwzVidyj7ZjLWL9GyA/viewform?embedded=true"></iframe>
   </main>
 
