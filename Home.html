@@ -116,16 +116,19 @@ header img {
   border-bottom: 4px solid #B71C1C; /* Sindhi red underline */
 }
   /* Button Base Style */
-.btn {
-  display: inline-block;
-  padding: 12px 24px;
-  margin: 10px;
-  font-size: 18px;
-  font-weight: bold;
-  text-decoration: none;
-  border-radius: 8px;
-  transition: all 0.3s ease;
-}
+  .btn.rsvp {
+      background-color: rgba(255,255,255,0.2);
+      color: #FFD700;
+      border: 2px solid #FFD700;
+      width: 100px;
+      height: 30px;
+      font-size: 16px;
+    }
+    .btn.rsvp:hover {
+      background-color: #FFD700;
+      color: #8B0000;
+      transform: scale(1.05);
+    }
 
 /* WhatsApp Button */
 .btn {
@@ -152,16 +155,6 @@ header img {
   transform: scale(1.05);
 }
 
-/* RSVP Button */
-.btn.rsvp {
-  background: linear-gradient(135deg, #B71C1C, #F9A825);
-  color: white;
-  border: 2px solid #B71C1C;
-}
-.btn.rsvp:hover {
-  background: linear-gradient(135deg, #F9A825, #B71C1C);
-  transform: scale(1.05);
-}
 
 /* Center the group */
 .button-group {
