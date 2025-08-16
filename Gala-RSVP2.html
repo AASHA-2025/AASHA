@@ -1,0 +1,199 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8"/>
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>AASHA Gala Night RSVP</title>
+  <style>
+    /* Body and page theme */
+    body {
+      margin: 0;
+      font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+      background: linear-gradient(135deg, #8B0000, #F9A825, #A0522D);
+      color: #fff;
+    }
+
+    /* Header with logo, title, and home button */
+    header {
+      background-color: rgba(255,255,255,0.1);
+      padding: 1rem 2rem;
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+      flex-wrap: wrap;
+      border-bottom: 4px solid #B71C1C;
+    }
+
+    .logo-title {
+      display: flex;
+      align-items: center;
+      gap: 15px;
+    }
+
+    header img {
+      height: 60px;
+      width: 60px;
+    }
+
+    header h1 {
+      margin: 0;
+      font-size: 2rem;
+      color: #B71C1C;
+    }
+
+    .sub-title {
+      font-size: 0.9rem;
+      color: #FFD54F;
+      opacity: 0.9;
+    }
+
+    .tagline {
+      font-family: 'Playfair Display', serif;
+      font-size: 0.9rem;
+      font-style: italic;
+      font-weight: bold;
+      color: #FFD54F;
+    }
+
+    /* Home button */
+    .home-button {
+      background-color: transparent;
+      color: #FFD700;
+      padding: 8px 14px;
+      border: 2px solid #FFD700;
+      border-radius: 6px;
+      text-decoration: none;
+      font-weight: bold;
+      font-size: 1rem;
+      transition: all 0.2s ease;
+    }
+
+    .home-button:hover {
+      background-color: #FFD700;
+      color: #8B0000;
+      box-shadow: 0 0 10px #FFD700;
+    }
+
+    /* Main content area */
+    main {
+      max-width: 900px;
+      margin: 2rem auto;
+      padding: 2rem;
+      background: rgba(0,0,0,0.3);
+      border-radius: 12px;
+      box-shadow: 0 0 20px rgba(0,0,0,0.5);
+      text-align: center;
+    }
+
+    main h2 {
+      font-size: 2rem;
+      margin-bottom: 0.5rem;
+      color: #FFD54F;
+    }
+
+    main h1 {
+      font-size: 2.5rem;
+      margin-bottom: 1rem;
+      color: #B71C1C;
+    }
+
+    main p {
+      font-size: 1.2rem;
+      margin-bottom: 2rem;
+    }
+
+    /* Buttons inside main */
+    .button-group {
+      text-align: center;
+      margin-top: 20px;
+    }
+
+    .btn {
+      display: block;
+      width: 220px;
+      padding: 12px 20px;
+      margin: 10px auto;
+      text-align: center;
+      font-size: 16px;
+      font-weight: bold;
+      border-radius: 8px;
+      text-decoration: none;
+      transition: all 0.3s ease;
+    }
+
+    .btn.whatsapp {
+      background-color: #25D366;
+      color: white;
+      border: 2px solid #1da851;
+    }
+
+    .btn.whatsapp:hover {
+      background-color: #1da851;
+      transform: scale(1.05);
+    }
+
+    .btn.rsvp {
+      background: linear-gradient(135deg, #B71C1C, #F9A825);
+      color: white;
+      border: 2px solid #B71C1C;
+    }
+
+    .btn.rsvp:hover {
+      background: linear-gradient(135deg, #F9A825, #B71C1C);
+      transform: scale(1.05);
+    }
+
+    /* Embed RSVP iframe */
+    iframe {
+      border: 4px solid #FFD700;
+      border-radius: 8px;
+      width: 100%;
+      height: 900px;
+    }
+
+    footer {
+      text-align: center;
+      padding: 1rem;
+      font-size: 0.9rem;
+      background: rgba(0,0,0,0.4);
+      color: #FFD54F;
+      margin-top: 2rem;
+    }
+  </style>
+</head>
+<body>
+  <header>
+    <div class="logo-title">
+      <img src="image2.PNG" alt="AASHA Logo">
+      <div>
+        <h1>AASHA</h1>
+        <div class="sub-title">All American Sindhi Hindu Association</div>
+        <div class="tagline">Connecting Hearts, Preserving Heritage</div>
+      </div>
+    </div>
+    <a href="Index.html" class="home-button">Home</a>
+  </header>
+
+  <main>
+    <h2>All American Sindhi Hindu Cultural</h2>
+    <h1>Gala Night 2026</h1>
+    <p>RSVP now to secure your spot for this unforgettable evening.</p>
+
+    <div class="button-group">
+      <a href="https://chat.whatsapp.com/LMrn3Nz0iXgAJFRexZWTk8" target="_blank" class="btn whatsapp">
+        📱 Join Our WhatsApp Community
+      </a>
+      <a href="https://docs.google.com/forms/d/e/1FAIpQLScg7IWOIQ14C9OO_eipPUOqyEfY0JggjwzVidyj7ZjLWL9GyA/viewform?embedded=true" target="_blank" class="btn rsvp">
+        📝 RSVP Now
+      </a>
+    </div>
+
+    <!-- Optional embedded form -->
+    <iframe src="https://docs.google.com/forms/d/e/1FAIpQLScg7IWOIQ14C9OO_eipPUOqyEfY0JggjwzVidyj7ZjLWL9GyA/viewform?embedded=true"></iframe>
+  </main>
+
+  <footer>
+    &copy; 2025 AASHA - All Rights Reserved
+  </footer>
+</body>
+</html>
