@@ -28,6 +28,20 @@ h1 {
   font-size: 56px;
   margin: 0;
 }
+    /* Logo fix - always scales inside header */
+header img {
+  max-width: 200px;   /* smaller default size */
+  height: auto;       /* keeps aspect ratio */
+  display: block;
+  margin: 0 auto;     /* centers it */
+}
+
+/* Responsive for smaller devices */
+@media (max-width: 600px) {
+  header img {
+    max-width: 140px; /* smaller logo for mobile */
+  }
+}
 
 /* Association text */
 .subheading {
@@ -137,30 +151,11 @@ h1 {
 </head>
 <body>
   <header>
-    <div class="logo-container" onclick="toggleDescription(this)">
-      <div class="logo-description">
-        AASHA - All American Sindhi Hindu Association is created to provide a connecting platform for all the Sindhi Hindus that live in All America. 
-        To help revive old relationships and build new relationships. 
-        To help build and sustain Sindhi Hindu cultural identity for our future generations. 
-        We plan to use this platform to organize social events. <br><br>
-        Most importantly, help our young Sindhi Hindu generation with a platform to find their suitable life partners from the same Sindhi Hindu Culture families in All America. 
-        The young generation group name will be <b>YASH - Young American Sindhi Hindu</b>. 
-        We plan to use various social media platforms to get free membership. 
-        Increase in numbers will provide the power to create more bonds. 
-        So please join this group and share with your family and friends living in All America. <br><br>
-        <b>Bhale Karey Aacho!</b>
-        <br><br>
-        <span class="tagline">Connecting Hearts, Preserving Heritage</span>
-      </div>
-      <h1><img src="IMG_9702.png" alt="AASHA Logo"> AASHA</h1>
-      <div style="text-align: center; font-size: 14px; color: #002B5B;">
-        All American Sindhi Hindu Association
-      </div>
-      <div style="font-family: Tahoma; font-size: 12px; text-align: center; font-weight: bold; color: #D32F2F;">
-        Connecting Hearts, Preserving Heritage
-      </div>
-    </div>
-  </header>
+  <img src="your-logo.png" alt="AASHA Logo">
+  <h1>AASHA</h1>
+  <div class="subheading">All American Sindhi Hindu Association</div>
+  <span class="tagline">Connecting Hearts, Preserving Heritage</span>
+</header>
   
   <main>
     <h2>Welcome to AASHA</h2>
