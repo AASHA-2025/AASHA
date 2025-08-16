@@ -4,7 +4,6 @@
   <meta charset="UTF-8"/>
   <meta name="viewport" content="width=device-width, initial-scale=1" />
   <title>AASHA - All American Sindhi Hindu Association</title>
-  
   <style>
     header {
   background-color: #ffffff;   /* White */
@@ -116,30 +115,45 @@ header img {
   text-align: center;
   border-bottom: 4px solid #B71C1C; /* Sindhi red underline */
 }
-    .btn-whatsapp {
-      display: inline-block;
-      background-color: #25D366;
-      color: white;
-      padding: 12px 20px;
-      border-radius: 6px;
-      font-size: 16px;
-      font-weight: bold;
-      text-decoration: none;
-      font-family: Arial, sans-serif;
-      margin: 0.5rem;
-    }
-    .btn-rsvp {
-      display: inline-block;
-      background-color: #F9A825;
-      padding: 12px 20px;
-      border-radius: 6px;
-      font-size: 16px;
-      font-weight: bold;
-      color: #002B5B;
-      text-decoration: none;
-      font-family: Arial, sans-serif;
-      margin: 0.5rem;
-    }
+  /* Button Base Style */
+.btn {
+  display: inline-block;
+  padding: 12px 24px;
+  margin: 10px;
+  font-size: 18px;
+  font-weight: bold;
+  text-decoration: none;
+  border-radius: 8px;
+  transition: all 0.3s ease;
+}
+
+/* WhatsApp Button */
+.btn.whatsapp {
+  background-color: #25D366; /* WhatsApp green */
+  color: white;
+  border: 2px solid #1da851;
+}
+.btn.whatsapp:hover {
+  background-color: #1da851;
+  transform: scale(1.05);
+}
+
+/* RSVP Button */
+.btn.rsvp {
+  background: linear-gradient(135deg, #B71C1C, #F9A825);
+  color: white;
+  border: 2px solid #B71C1C;
+}
+.btn.rsvp:hover {
+  background: linear-gradient(135deg, #F9A825, #B71C1C);
+  transform: scale(1.05);
+}
+
+/* Center Buttons */
+.button-group {
+  text-align: center;
+  margin-top: 20px;
+}
   </style>
 
   <script>
@@ -172,14 +186,15 @@ header img {
       <b>Bhale Karey Aacho!</b>
       <span class="tagline">Connecting Hearts, Preserving Heritage</span>
     </p>
-    <p>
-      <a href="https://chat.whatsapp.com/LMrn3Nz0iXgAJFRexZWTk8" target="_blank" class="btn-whatsapp">
-        📱 Join Our WhatsApp Community
-      </a>
-      <a href="Gala-RSVP.html" class="btn-rsvp">RSVP</a>
-    </p>
+  <div class="button-group">
+  <a href="https://wa.me/1XXXXXXXXXX" class="btn whatsapp" target="_blank">
+    📲 Join WhatsApp
+  </a>
+  <a href="https://your-rsvp-link.com" class="btn rsvp" target="_blank">
+    ✨ RSVP Now
+  </a>
+</div>
   </main>
-  
   <footer>
     &copy; 2025 AASHA - All Rights Reserved
   </footer>
