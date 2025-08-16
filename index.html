@@ -1,0 +1,162 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8"/>
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>AASHA - All American Sindhi Hindu Association</title>
+  
+  <style>
+    body {
+      font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+      background: linear-gradient(135deg, #002B5B, #D32F2F, #F9A825);
+      color: white;
+      margin: 0; padding: 0;
+    }
+    header {
+      background-color: rgba(0,0,0,0.6);
+      padding: 1rem 2rem;
+      text-align: center;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      gap: 15px;
+    }
+    header img {
+      height: 60px;
+      width: 60px;
+    }
+    header h1 {
+      margin: 0;
+      font-size: 2.5rem;
+      letter-spacing: 2px;
+      color: #F9A825; /* mustard yellow from logo */
+    }
+    main {
+      max-width: 900px;
+      margin: 1.5rem auto;
+      padding: 0.5rem 1rem;
+      background: rgba(0,43,91,0.7); /* deep blue overlay */
+      border-radius: 10px;
+      box-shadow: 0 0 15px rgba(0,0,0,0.6);
+    }
+    main h2 {
+      font-size: 2rem;
+      margin-bottom: 1rem;
+      border-bottom: 2px solid #F9A825; /* mustard highlight */
+      padding-bottom: 0.5rem;
+      text-align: center;
+      color: #FFD54F;
+    }
+    main p {
+      font-size: 1.2rem;
+      line-height: 1.6;
+    }
+    footer {
+      text-align: center;
+      padding: 1rem;
+      font-size: 0.9rem;
+      background-color: rgba(211,47,47,0.8); /* Sindhi red */
+      color: #fff;
+      margin-top: 3rem;
+    }
+    .logo-container {
+      position: relative;
+      display: inline-block;
+    }
+    .logo-description {
+      position: fixed;
+      top: 50%;
+      left: 50%;
+      transform: translate(-50%, -50%);
+      background: #002B5B; /* deep blue */
+      color: white;
+      padding: 12px 18px;
+      border-radius: 6px;
+      width: 90%;
+      font-size: 16px;
+      display: none;
+      z-index: 9999;
+      border: 2px solid #F9A825; /* mustard border */
+    }
+    .tagline {
+      display: block;
+      font-family: 'Playfair Display', serif;
+      font-size: 20px;
+      font-style: italic;
+      font-weight: bold;
+      color: #FFD54F;
+      text-align: center;
+      border-top: 2px solid #D32F2F;
+      padding-top: 10px;
+      margin-top: 15px;
+    }
+    .btn-whatsapp {
+      display: inline-block;
+      background-color: #25D366;
+      color: white;
+      padding: 12px 20px;
+      border-radius: 6px;
+      font-size: 16px;
+      font-weight: bold;
+      text-decoration: none;
+      font-family: Arial, sans-serif;
+    }
+    .btn-rsvp {
+      display: inline-block;
+      background-color: #F9A825;
+      padding: 12px 20px;
+      border-radius: 6px;
+      font-size: 16px;
+      font-weight: bold;
+      color: #002B5B;
+      text-decoration: none;
+      font-family: Arial, sans-serif;
+    }
+  </style>
+
+  <script>
+    function toggleDescription(el) {
+      const desc = el.querySelector('.logo-description');
+      desc.style.display = (desc.style.display === 'block') ? 'none' : 'block';
+    }
+  </script>
+</head>
+<body>
+  <header>
+    <div class="logo-container" onclick="toggleDescription(this)">
+      <div class="logo-description">
+        AASHA - All American Sindhi Hindu Association is created to provide a connecting platform for all the Sindhi Hindus that live in All America... 
+        <br><br>
+        <span class="tagline">Connecting Hearts, Preserving Heritage</span>
+      </div>
+      <h1><img src="IMG_9702.png" alt="AASHA Logo">AASHA</h1>
+      <div style="text-align: center; font-size: 14px; color: #FFD54F;">
+        All American Sindhi Hindu Association
+      </div>
+      <div style="font-family: Tahoma; font-size: 12px; text-align: center; font-weight: bold; color: #F9A825;">
+        Connecting Hearts, Preserving Heritage
+      </div>
+    </div>
+  </header>
+  
+  <main>
+    <h2>Welcome to AASHA</h2>
+    <p style="font-size: 13px; text-align: center;">
+      All American Sindhi Hindu Association is created to provide a connecting platform...
+      <span class="tagline">Connecting Hearts, Preserving Heritage</span>
+    </p>
+    <p>
+      <a href="https://chat.whatsapp.com/LMrn3Nz0iXgAJFRexZWTk8" target="_blank" class="btn-whatsapp">
+        📱 Join Our WhatsApp Community
+      </a>
+    </p>
+    <p>
+      <a href="Gala-RSVP.html" class="btn-rsvp">RSVP</a>
+    </p>
+  </main>
+  
+  <footer>
+    &copy; 2025 AASHA - All Rights Reserved
+  </footer>
+</body>
+</html>
