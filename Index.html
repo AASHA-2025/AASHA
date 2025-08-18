@@ -155,7 +155,14 @@ header img {
 }
   </style>
 <!-- Plausible Analytics -->
-<script async defer data-domain="AASHA-2025.github.io" src="https://plausible.io/js/plausible.js"></script>
+<script>
+function toggleDescription(el) {
+  const desc = el.querySelector('.logo-description');
+  desc.style.display = (desc.style.display === 'block') ? 'none' : 'block';
+}
+</script>
+
+	<script async defer data-domain="AASHA-2025.github.io" src="https://plausible.io/js/plausible.js"></script>
   
 	<script>
 function toggleDescription(el) {
@@ -218,9 +225,9 @@ Bhale Karey Aacho!
       transition: all 0.3s ease;">RSVP</Button>  
 </a>
 </div>
-	  <div style="text- align: center;">
-		  <img src="https://plausible.io/badge/AASHA-2025.github.io/visitors.svg" alt="Unique Visitors">
-	  </div>
+	  <div style="text-align: center; margin-top: 20px;">
+  <img src="https://plausible.io/badge/AASHA-2025.github.io/visitors.svg" alt="Unique Visitors">
+</div>
   </main>
   <footer>
     &copy; 2025 AASHA - All Rights Reserved
