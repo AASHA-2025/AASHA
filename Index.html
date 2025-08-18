@@ -154,39 +154,9 @@ header img {
   margin-top: 20px;
 }
   </style>
-
+<!-- Plausible Analytics -->
+<script async defer data-domain="AASHA-2025.github.io" src="https://plausible.io/js/plausible.js"></script>
   
-    
-    <!-- Google Analytics -->
-<script async src="https://www.googletagmanager.com/gtag/js?id=G-XXXXXXX"></script>
-<script>
-  window.dataLayer = window.dataLayer || [];
-  function gtag(){dataLayer.push(arguments);}
-  gtag('js', new Date());
-  gtag('config', 'G-XXXXXXX'); /* replace with your GA tracking ID */
-</script>
-
-<!-- Hits.sh visitor counter (once per user) -->
-<script>
-if (!localStorage.getItem('hitsCounted')) {
-  const main = document.querySelector('main'); // get the main section
-  const img = document.createElement('img');
-  img.src = 'https://hits.sh/RKU.github.io.svg?style=for-the-badge';
-  img.alt = 'Hits';
-  img.style.marginTop = '20px';
-  img.style.display = 'block';
-  img.style.marginLeft = 'auto';
-  img.style.marginRight = 'auto';
-  
-  if (main) {
-    main.appendChild(img); // adds above footer at the end of main
-  } else {
-    document.body.appendChild(img); // fallback
-  }
-
-  localStorage.setItem('hitsCounted', 'true');
-}
-</script>
 	<script>
 function toggleDescription(el) {
       const desc = el.querySelector('.logo-description');
@@ -249,7 +219,7 @@ Bhale Karey Aacho!
 </a>
 </div>
 	  <div style="text- align: center;">
-		  <img src="https://hits.sh/AASHA-2025.github.io.svg?style=for-the-badge" alt="Hits">
+		  <img src="https://plausible.io/badge/AASHA-2025.github.io/visitors.svg" alt="Unique Visitors">
 	  </div>
   </main>
   <footer>
