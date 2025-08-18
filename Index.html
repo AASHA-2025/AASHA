@@ -155,12 +155,24 @@ header img {
 }
   </style>
 
+  
+    
+    <!-- Google tag (gtag.js) -->
+<script async src="https://www.googletagmanager.com/gtag/js?id=G-XXXXXXX"></script>
+<script>
+  window.dataLayer = window.dataLayer || [];
+  function gtag(){dataLayer.push(arguments);}
+  gtag('js', new Date());
+
+  gtag('config', 'G-XXXXXXX');
+</script>
+	}
   <script>
-    function toggleDescription(el) {
+function toggleDescription(el) {
       const desc = el.querySelector('.logo-description');
       desc.style.display = (desc.style.display === 'block') ? 'none' : 'block';
-    }
-  </script>
+
+</script>
 </head>
 <body>
   <header>
