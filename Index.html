@@ -13,10 +13,14 @@
       border-bottom: 4px solid #B71C1C;
     }
     header img {
-      max-width: 220px;
+      max-width: 200px;
       height: auto;
       display: block;
-      margin: 0 auto 10px;
+      margin: 0 auto;
+    }
+
+    @media (max-width: 600px) {
+      header img { max-width: 300px; }
     }
     h1 { color: #B71C1C; font-size: 56px; margin: 0; }
     .subheading { color: #333; font-size: 16px; font-weight: bold; margin-top: 5px; }
